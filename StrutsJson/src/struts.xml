@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<!-- 常量配置 -->
+	 <constant name="struts.devMode" value="false" />
+	 <constant name="struts.i18n.encoding" value="utf-8"/>
+ 	 <!-- 缺省包 -->
+ 	 <package name="packgeone" namespace="/" extends="json-default">
+ 	 	<action name="json" class="org.fage.controller.JsonAction">
+ 	 		<result name="success" type="json"></result>
+ 	 	</action>
+ 	 </package>
+
+</struts>
